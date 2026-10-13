@@ -1,0 +1,924 @@
+/* =========================================
+   VYY'S - Hoja de estilos principal
+   Colores corporativos (tomados del logo):
+   verde  #1e3b35  | crema #f5f0e6
+   dorado #b8975a  | rosa  #d9b8a8
+   ========================================= */
+
+:root {
+    --verde: #1e3b35;
+    --verde-claro: #2d5249;
+    --crema: #f5f0e6;
+    --crema-oscuro: #ebe3d3;
+    --dorado: #b8975a;
+    --rosa: #d9b8a8;
+    --texto: #2b2b2b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--crema);
+    color: var(--texto);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ---------- Encabezado ---------- */
+header {
+    background-color: var(--verde);
+    color: var(--crema);
+    padding: 14px 40px;
+    border-bottom: 3px solid var(--dorado);
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.marca img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+.marca h1 {
+    margin: 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--crema);
+}
+
+.marca p {
+    margin: 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--rosa);
+}
+
+/* ---------- Menú ---------- */
+nav {
+    background-color: var(--verde-claro);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1150px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    display: block;
+    padding: 15px 26px;
+    color: var(--crema);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: background-color 0.25s, border-color 0.25s;
+}
+
+nav a:hover {
+    background-color: var(--verde);
+    border-bottom-color: var(--dorado);
+}
+
+nav a.activo {
+    border-bottom-color: var(--dorado);
+    color: var(--dorado);
+}
+
+.btn-menu {
+    display: none;
+    width: 100%;
+    background-color: var(--verde-claro);
+    color: var(--crema);
+    border: none;
+    padding: 14px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ---------- Contenido general ---------- */
+main {
+    min-height: 60vh;
+}
+
+.contenedor {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 50px 24px;
+}
+
+h2,
+h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    color: var(--verde);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 34px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.subtitulo {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 36px;
+    color: #5a5a5a;
+}
+
+.linea-dorada {
+    width: 70px;
+    height: 3px;
+    background-color: var(--dorado);
+    margin: 0 auto 18px;
+    border: none;
+}
+
+/* ---------- Botones ---------- */
+.boton,
+button {
+    display: inline-block;
+    background-color: var(--verde);
+    color: var(--crema);
+    border: 2px solid var(--verde);
+    border-radius: 30px;
+    padding: 10px 26px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.boton:hover,
+button:hover {
+    transform: scale(1.05);
+    background-color: var(--dorado);
+    border-color: var(--dorado);
+    color: #fff;
+}
+
+.boton-claro {
+    background-color: transparent;
+    color: var(--crema);
+    border-color: var(--crema);
+}
+
+/* ---------- Sección principal (inicio) ---------- */
+.hero {
+    background-color: var(--verde);
+    color: var(--crema);
+}
+
+.hero-contenido {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 50px 24px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto .etiqueta {
+    color: var(--dorado);
+    letter-spacing: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+
+.hero-texto h2 {
+    color: var(--crema);
+    text-align: left;
+    font-size: 46px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.hero-texto p {
+    margin: 0 0 22px;
+}
+
+.hero-imagen {
+    flex: 1;
+}
+
+.hero-imagen img {
+    border-radius: 16px;
+    border: 2px solid var(--dorado);
+}
+
+.saludo-caja {
+    background-color: rgba(245, 240, 230, 0.1);
+    border: 1px solid var(--dorado);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 24px;
+}
+
+.saludo-caja label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--rosa);
+}
+
+.saludo-caja input {
+    width: 55%;
+    margin-right: 6px;
+    margin-bottom: 8px;
+}
+
+#mensajeSaludo {
+    margin: 8px 0 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 20px;
+    color: var(--crema);
+}
+
+/* ---------- Tarjetas y productos ---------- */
+.tarjetas,
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: center;
+}
+
+.tarjeta,
+.producto {
+    background-color: #fff;
+    border: 1px solid var(--crema-oscuro);
+    border-radius: 14px;
+    overflow: hidden;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 14px rgba(30, 59, 53, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto {
+    width: 255px;
+}
+
+.tarjeta:hover,
+.producto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(30, 59, 53, 0.18);
+}
+
+.tarjeta img,
+.producto img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.tarjeta-info,
+.producto-info {
+    padding: 18px 20px 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tarjeta h3,
+.producto h3 {
+    margin: 0 0 6px;
+    font-size: 21px;
+}
+
+.tarjeta p,
+.producto p {
+    margin: 0 0 14px;
+    font-size: 14.5px;
+    color: #555;
+}
+
+.tarjeta .boton,
+.producto button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.producto .precio {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dorado);
+    margin: 0 0 14px;
+}
+
+/* ---------- Ventajas ---------- */
+.fondo-rosa {
+    background-color: var(--rosa);
+}
+
+.ventajas {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ventaja {
+    flex: 1;
+    min-width: 230px;
+    text-align: center;
+    padding: 10px 14px;
+}
+
+.ventaja .icono {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 40px;
+    color: var(--verde);
+    line-height: 1;
+}
+
+.ventaja h3 {
+    margin: 8px 0 6px;
+    font-size: 20px;
+}
+
+.ventaja p {
+    margin: 0;
+    font-size: 14.5px;
+}
+
+/* ---------- Nosotros ---------- */
+.bloque-texto {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.dos-columnas {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.caja-mv {
+    flex: 1;
+    min-width: 280px;
+    background-color: var(--verde);
+    color: var(--crema);
+    border-radius: 14px;
+    padding: 30px;
+    border-top: 5px solid var(--dorado);
+}
+
+.caja-mv h3 {
+    color: var(--dorado);
+    margin-top: 0;
+    font-size: 26px;
+}
+
+.valores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.valor {
+    width: 210px;
+    background-color: #fff;
+    border: 1px solid var(--crema-oscuro);
+    border-bottom: 4px solid var(--dorado);
+    border-radius: 10px;
+    padding: 20px 16px;
+    text-align: center;
+}
+
+.valor h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.valor p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.equipo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+}
+
+.integrante {
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 22px 14px;
+    border: 1px solid var(--crema-oscuro);
+}
+
+.integrante .avatar {
+    width: 74px;
+    height: 74px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background-color: var(--rosa);
+    color: var(--verde);
+    border: 3px solid var(--dorado);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.integrante h3 {
+    margin: 0 0 2px;
+    font-size: 18px;
+}
+
+.integrante p {
+    margin: 0;
+    font-size: 13.5px;
+    color: #666;
+}
+
+.integrante .rol {
+    color: var(--dorado);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- Filtros y calculadora (productos) ---------- */
+.filtros {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.filtros button {
+    background-color: transparent;
+    color: var(--verde);
+    padding: 8px 20px;
+}
+
+.filtros button.activo {
+    background-color: var(--verde);
+    color: var(--crema);
+}
+
+.calculadora {
+    background-color: var(--verde);
+    color: var(--crema);
+    border-radius: 16px;
+    padding: 36px;
+    max-width: 780px;
+    margin: 0 auto;
+    border: 2px solid var(--dorado);
+}
+
+.calculadora h2 {
+    color: var(--crema);
+}
+
+.calculadora .fila {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.calculadora .campo {
+    flex: 1;
+    min-width: 200px;
+}
+
+.calculadora button {
+    background-color: var(--dorado);
+    border-color: var(--dorado);
+    color: #fff;
+}
+
+.calculadora button:hover {
+    background-color: var(--rosa);
+    border-color: var(--rosa);
+    color: var(--verde);
+}
+
+.calculadora label {
+    color: var(--rosa);
+}
+
+.resultado {
+    background-color: var(--crema);
+    color: var(--verde);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    line-height: 1.9;
+}
+
+.resultado .total {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 24px;
+    font-weight: 700;
+    border-top: 1px solid var(--dorado);
+    margin-top: 6px;
+    padding-top: 6px;
+}
+
+.aviso-carrito {
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: var(--verde);
+}
+
+/* ---------- Formularios ---------- */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 14px 0 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px 14px;
+    font-family: inherit;
+    font-size: 15px;
+    border: 1.5px solid #cfc6b2;
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--texto);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--dorado);
+    box-shadow: 0 0 0 3px rgba(184, 151, 90, 0.25);
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.error {
+    border-color: #b3382c;
+}
+
+.msg-error {
+    color: #b3382c;
+    font-size: 13px;
+    margin: 4px 0 0;
+    min-height: 0;
+}
+
+.contacto-grid {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#formContacto {
+    flex: 2;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 12px 30px 30px;
+    border-radius: 14px;
+    border: 1px solid var(--crema-oscuro);
+    box-shadow: 0 4px 14px rgba(30, 59, 53, 0.08);
+}
+
+.fila-doble {
+    display: flex;
+    gap: 18px;
+}
+
+.fila-doble > div {
+    flex: 1;
+}
+
+#formContacto button {
+    margin-top: 22px;
+}
+
+.exito {
+    margin-top: 18px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    background-color: #e3efe4;
+    border-left: 5px solid var(--verde-claro);
+    color: var(--verde);
+    font-weight: 600;
+}
+
+.info-empresa {
+    flex: 1;
+    min-width: 260px;
+    background-color: var(--verde);
+    color: var(--crema);
+    border-radius: 14px;
+    padding: 30px;
+    border-top: 5px solid var(--dorado);
+}
+
+.info-empresa h3 {
+    color: var(--dorado);
+    margin-top: 0;
+}
+
+.info-empresa p {
+    margin: 0 0 14px;
+}
+
+.info-empresa strong {
+    color: var(--rosa);
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ---------- Sistema ---------- */
+.ficha {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.ficha > div {
+    flex: 1;
+    min-width: 280px;
+    background-color: #fff;
+    border-radius: 12px;
+    border-left: 5px solid var(--dorado);
+    padding: 22px 26px;
+    box-shadow: 0 4px 14px rgba(30, 59, 53, 0.08);
+}
+
+.ficha h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.ficha p {
+    margin: 0;
+}
+
+.lista-funciones {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.lista-funciones li {
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px 20px;
+    border: 1px solid var(--crema-oscuro);
+}
+
+.lista-funciones li::before {
+    content: "✓ ";
+    color: var(--dorado);
+    font-weight: 700;
+}
+
+.lista-funciones strong {
+    color: var(--verde);
+}
+
+.usuarios {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.usuarios span {
+    background-color: var(--verde);
+    color: var(--crema);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.capturas {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.capturas figure {
+    margin: 0;
+    flex: 1 1 320px;
+    max-width: 360px;
+}
+
+.capturas img {
+    border-radius: 10px;
+    border: 2px solid var(--verde);
+}
+
+.capturas figcaption {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+    color: #555;
+}
+
+/* ---------- Pie de página ---------- */
+footer {
+    background-color: var(--verde);
+    color: var(--crema);
+    border-top: 3px solid var(--dorado);
+    padding: 34px 24px 18px;
+    text-align: center;
+}
+
+footer h3 {
+    color: var(--crema);
+    margin: 0 0 4px;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--rosa);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--dorado);
+    text-decoration: underline;
+}
+
+.redes {
+    margin: 12px 0;
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+}
+
+.copy {
+    border-top: 1px solid rgba(245, 240, 230, 0.2);
+    margin-top: 16px;
+    padding-top: 12px;
+    font-size: 13px;
+    color: var(--rosa);
+}
+
+/* ---------- Diseño responsivo ---------- */
+@media (max-width: 900px) {
+    .hero-contenido {
+        flex-direction: column;
+    }
+
+    .hero-texto h2 {
+        font-size: 36px;
+    }
+
+    .hero-imagen {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 12px 18px;
+    }
+
+    .marca img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .marca h1 {
+        font-size: 26px;
+    }
+
+    .marca p {
+        font-size: 14px;
+    }
+
+    .btn-menu {
+        display: block;
+        border-radius: 0;
+    }
+
+    .btn-menu:hover {
+        transform: none;
+        background-color: var(--verde);
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.abierto {
+        display: flex;
+    }
+
+    nav a {
+        padding: 13px 24px;
+        border-bottom: 1px solid rgba(245, 240, 230, 0.12);
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .contenedor {
+        padding: 36px 16px;
+    }
+
+    .tarjetas,
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta,
+    .producto {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .fila-doble {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .saludo-caja input {
+        width: 100%;
+    }
+
+    .calculadora {
+        padding: 24px 18px;
+    }
+
+    #formContacto {
+        padding: 6px 18px 24px;
+    }
+}
