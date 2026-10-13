@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VYY'S - Tienda de ropa casual y semielegante en Costa Rica.">
+    <title>Productos | VYY'S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="marca">
+            <img src="img/logo.png" alt="Logo de VYY'S">
+            <div>
+                <h1>VYY'S</h1>
+                <p>Elegancia para cada día.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="btn-menu" id="btnMenu" type="button">☰ Menú</button>
+        <ul id="listaMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html" class="activo">Productos</a></li>
+                <li><a href="sistema.html">Sistema</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contenedor">
+            <h2>Nuestros productos</h2>
+            <hr class="linea-dorada">
+            <p class="subtitulo">Ropa, calzado y complementos para todos los días. Los precios están en colones.</p>
+
+            <div class="filtros">
+                <button type="button" class="activo" data-filtro="todos">Todo</button>
+                <button type="button" data-filtro="ropa">Ropa</button>
+                <button type="button" data-filtro="calzado">Calzado</button>
+                <button type="button" data-filtro="complementos">Complementos</button>
+            </div>
+
+            <p class="aviso-carrito">Artículos en tu carrito: <span id="contadorCarrito">0</span></p>
+
+            <div class="productos" id="listaProductos">
+            <div class="producto" data-categoria="ropa">
+                <img src="img/camisas.svg" alt="Camisas casuales">
+                <div class="producto-info">
+                    <h3>Camisas casuales</h3>
+                    <p>Camisas para el uso diario y para diferentes ocasiones. Cómodas, frescas y fáciles de combinar.</p>
+                    <p class="precio">₡14 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Camisas casuales">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="ropa">
+                <img src="img/camisetas.svg" alt="Camisetas">
+                <div class="producto-info">
+                    <h3>Camisetas</h3>
+                    <p>Ropa cómoda y moderna para complementar distintos estilos, en varios colores.</p>
+                    <p class="precio">₡7 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Camisetas">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="ropa">
+                <img src="img/pantalones.svg" alt="Pantalones">
+                <div class="producto-info">
+                    <h3>Pantalones</h3>
+                    <p>Pantalones de vestir y casuales, con diseños para jóvenes y adultos.</p>
+                    <p class="precio">₡18 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Pantalones">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="ropa">
+                <img src="img/jeans.svg" alt="Jeans">
+                <div class="producto-info">
+                    <h3>Jeans</h3>
+                    <p>Pantalones de mezclilla resistentes que combinan con casi cualquier prenda.</p>
+                    <p class="precio">₡21 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Jeans">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="calzado">
+                <img src="img/tenis.svg" alt="Tenis">
+                <div class="producto-info">
+                    <h3>Tenis</h3>
+                    <p>Calzado cómodo para el uso diario, ideal para caminar todo el día.</p>
+                    <p class="precio">₡32 000</p>
+                    <button type="button" class="btn-agregar" data-nombre="Tenis">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="calzado">
+                <img src="img/zapatillas.svg" alt="Zapatillas">
+                <div class="producto-info">
+                    <h3>Zapatillas</h3>
+                    <p>Zapatillas para damas, para diferentes estilos y ocasiones.</p>
+                    <p class="precio">₡27 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Zapatillas">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="ropa">
+                <img src="img/sacos.svg" alt="Sacos">
+                <div class="producto-info">
+                    <h3>Sacos</h3>
+                    <p>Prendas semielegantes para ocasiones especiales o ambientes laborales.</p>
+                    <p class="precio">₡39 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Sacos">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="ropa">
+                <img src="img/chaquetas.svg" alt="Chaquetas">
+                <div class="producto-info">
+                    <h3>Chaquetas</h3>
+                    <p>Chaquetas para complementar tus conjuntos y protegerte del frío.</p>
+                    <p class="precio">₡35 000</p>
+                    <button type="button" class="btn-agregar" data-nombre="Chaquetas">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="complementos">
+                <img src="img/accesorios.svg" alt="Accesorios">
+                <div class="producto-info">
+                    <h3>Accesorios</h3>
+                    <p>Gorras, cinturones y otros complementos para terminar tu outfit.</p>
+                    <p class="precio">₡8 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Accesorios">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="ropa">
+                <img src="img/vestidos.svg" alt="Vestidos">
+                <div class="producto-info">
+                    <h3>Vestidos</h3>
+                    <p>Vestidos semielegantes con diversidad y calidad para damas.</p>
+                    <p class="precio">₡24 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Vestidos">Agregar</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="fondo-rosa">
+            <div class="contenedor">
+                <div class="calculadora">
+                    <h2>Calculadora de compra</h2>
+                    <hr class="linea-dorada">
+                    <p class="subtitulo" style="color:#f5f0e6">Calcula cuánto pagarías. Si compras varias unidades, ¡te damos descuento! Ideal para compras al por mayor.</p>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="calcProducto">Producto</label>
+                            <select id="calcProducto">
+                            <option value="14500">Camisas casuales - ₡14 500</option>
+                            <option value="7900">Camisetas - ₡7 900</option>
+                            <option value="18900">Pantalones - ₡18 900</option>
+                            <option value="21500">Jeans - ₡21 500</option>
+                            <option value="32000">Tenis - ₡32 000</option>
+                            <option value="27500">Zapatillas - ₡27 500</option>
+                            <option value="39900">Sacos - ₡39 900</option>
+                            <option value="35000">Chaquetas - ₡35 000</option>
+                            <option value="8500">Accesorios - ₡8 500</option>
+                            <option value="24900">Vestidos - ₡24 900</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="calcCantidad">Cantidad</label>
+                            <input type="number" id="calcCantidad" min="1" value="1">
+                        </div>
+                    </div>
+                    <button type="button" id="btnCalcular">Calcular</button>
+                    <div class="resultado" id="resultadoCalc">
+                        Elige un producto y la cantidad, luego presiona <strong>Calcular</strong>.
+                    </div>
+                    <p style="font-size:13px;margin:12px 0 0;color:#d9b8a8">Descuentos: 3 a 5 unidades, 5% · 6 a 11 unidades, 10% · 12 o más, 15%.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>VYY'S</h3>
+        <p>Moda · Estilo</p>
+        <p>Correo: <a href="mailto:ventas@vyys.cr">ventas@vyys.cr</a></p>
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <p class="copy">&copy; <span id="anio">2026</span> VYY'S. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

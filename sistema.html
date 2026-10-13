@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VYY'S - Tienda de ropa casual y semielegante en Costa Rica.">
+    <title>Sistema | VYY'S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="marca">
+            <img src="img/logo.png" alt="Logo de VYY'S">
+            <div>
+                <h1>VYY'S</h1>
+                <p>Elegancia para cada día.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="btn-menu" id="btnMenu" type="button">☰ Menú</button>
+        <ul id="listaMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sistema.html" class="activo">Sistema</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contenedor">
+            <h2>Nuestro sistema de gestión</h2>
+            <hr class="linea-dorada">
+            <p class="subtitulo">Además de la tienda en línea, VYY'S cuenta con una propuesta de software para organizar el trabajo interno de la empresa.</p>
+
+            <div class="ficha">
+                <div>
+                    <h3>Nombre de la solución</h3>
+                    <p><strong>VYY'S Gestión</strong>, sistema de ventas e inventario para tienda de ropa.</p>
+                </div>
+                <div>
+                    <h3>Problema que resuelve</h3>
+                    <p>Hoy los pedidos llegan por mensajes de WhatsApp, las transferencias se revisan una por una en la cuenta bancaria y el inventario se anota en un cuaderno. Esto genera errores, pérdida de tiempo y atención solo en horario de oficina.</p>
+                </div>
+            </div>
+
+            <div class="ficha">
+                <div>
+                    <h3>Objetivo del sistema</h3>
+                    <p>Centralizar en un solo lugar el registro de clientes, productos, ventas e inventario, para que los pedidos se atiendan más rápido, sin errores y con información siempre actualizada.</p>
+                </div>
+                <div>
+                    <h3>Usuarios del sistema</h3>
+                    <div class="usuarios">
+                        <span>Gerente General</span>
+                        <span>Asesores de ventas</span>
+                        <span>Encargado de bodega</span>
+                        <span>Encargado de redes</span>
+                        <span>Contador / Asistente administrativo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fondo-rosa">
+            <div class="contenedor">
+                <h2>Funciones principales</h2>
+                <hr class="linea-dorada">
+                <ul class="lista-funciones">
+                <li><strong>Registrar clientes:</strong> guarda nombre, teléfono, correo y dirección de entrega de cada cliente.</li>
+                <li><strong>Registrar productos:</strong> agrega prendas nuevas con categoría, talla, precio y fotografía.</li>
+                <li><strong>Registrar ventas:</strong> crea el pedido, calcula el total con IVA y descuentos por cantidad.</li>
+                <li><strong>Consultar inventario:</strong> muestra las existencias de bodega y avisa cuando una prenda tiene stock bajo.</li>
+                <li><strong>Confirmar pagos SINPE:</strong> marca cada pago como verificado para evitar entregas con comprobantes falsos.</li>
+                <li><strong>Controlar envíos a domicilio:</strong> da seguimiento al estado de cada pedido hasta que llega al cliente.</li>
+                <li><strong>Generar reportes:</strong> resume las ventas por mes y señala las prendas más vendidas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contenedor">
+            <h2>Prototipo del sistema</h2>
+            <hr class="linea-dorada">
+            <p class="subtitulo">Capturas del prototipo elaborado en el proyecto de Diseño de Software.</p>
+            <div class="capturas">
+                <figure>
+                    <img src="img/sistema-inventario.svg" alt="Pantalla de inventario del sistema">
+                    <figcaption>Pantalla de inventario</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/sistema-ventas.svg" alt="Pantalla de registro de ventas">
+                    <figcaption>Registro de ventas</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/sistema-reportes.svg" alt="Pantalla de reportes mensuales">
+                    <figcaption>Reporte de ventas</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>VYY'S</h3>
+        <p>Moda · Estilo</p>
+        <p>Correo: <a href="mailto:ventas@vyys.cr">ventas@vyys.cr</a></p>
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <p class="copy">&copy; <span id="anio">2026</span> VYY'S. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

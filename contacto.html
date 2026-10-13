@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VYY'S - Tienda de ropa casual y semielegante en Costa Rica.">
+    <title>Contacto | VYY'S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="marca">
+            <img src="img/logo.png" alt="Logo de VYY'S">
+            <div>
+                <h1>VYY'S</h1>
+                <p>Elegancia para cada día.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="btn-menu" id="btnMenu" type="button">☰ Menú</button>
+        <ul id="listaMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sistema.html">Sistema</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contenedor">
+            <h2>Contáctanos</h2>
+            <hr class="linea-dorada">
+            <p class="subtitulo">¿Tienes una duda sobre tallas, envíos o compras al por mayor? Escríbenos y te respondemos lo más pronto posible.</p>
+
+            <div class="contacto-grid">
+                <form id="formContacto" novalidate>
+                    <div class="fila-doble">
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre">
+                            <p class="msg-error" id="error-nombre"></p>
+                        </div>
+                        <div>
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos">
+                            <p class="msg-error" id="error-apellidos"></p>
+                        </div>
+                    </div>
+
+                    <div class="fila-doble">
+                        <div>
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo">
+                            <p class="msg-error" id="error-correo"></p>
+                        </div>
+                        <div>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="8888-8888">
+                            <p class="msg-error" id="error-telefono"></p>
+                        </div>
+                    </div>
+
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="">Selecciona una opción</option>
+                        <option value="consulta">Consulta sobre productos</option>
+                        <option value="pedido">Seguimiento de un pedido</option>
+                        <option value="mayoreo">Compra al por mayor</option>
+                        <option value="cambio">Cambio o devolución</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <p class="msg-error" id="error-motivo"></p>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                    <p class="msg-error" id="error-mensaje"></p>
+
+                    <button type="submit">Enviar</button>
+                    <p class="exito" id="mensajeExito" style="display:none"></p>
+                </form>
+
+                <aside class="info-empresa">
+                    <h3>Información de VYY'S</h3>
+                    <p><strong>Teléfono</strong>2222-0000</p>
+                    <p><strong>Correo</strong>ventas@vyys.cr</p>
+                    <p><strong>Horario</strong>Lunes a sábado, de 9:00 a.m. a 7:00 p.m.</p>
+                    <p><strong>Ubicación</strong>San José, Costa Rica</p>
+                    <p><strong>Entregas</strong>Servicio a domicilio en todo el país mediante nuestra página web.</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>VYY'S</h3>
+        <p>Moda · Estilo</p>
+        <p>Correo: <a href="mailto:ventas@vyys.cr">ventas@vyys.cr</a></p>
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <p class="copy">&copy; <span id="anio">2026</span> VYY'S. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

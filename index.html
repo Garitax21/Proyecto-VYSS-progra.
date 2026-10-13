@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VYY'S - Tienda de ropa casual y semielegante en Costa Rica.">
+    <title>Inicio | VYY'S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="marca">
+            <img src="img/logo.png" alt="Logo de VYY'S">
+            <div>
+                <h1>VYY'S</h1>
+                <p>Elegancia para cada día.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="btn-menu" id="btnMenu" type="button">☰ Menú</button>
+        <ul id="listaMenu">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sistema.html">Sistema</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-contenido">
+                <div class="hero-texto">
+                    <p class="etiqueta">Moda · Estilo</p>
+                    <h2>Tu ropa casual y semielegante, ahora a un clic</h2>
+                    <p>Bienvenido a VYY'S. Encuentra camisas, vestidos, sacos, calzado y más, con buena calidad y precios accesibles. Compramos y entregamos donde estés, con servicio a domicilio.</p>
+
+                    <div class="saludo-caja">
+                        <label for="nombreVisitante">¿Cómo te llamas?</label>
+                        <input type="text" id="nombreVisitante" placeholder="Escribe tu nombre">
+                        <button type="button" id="btnSaludo">Saludar</button>
+                        <p id="mensajeSaludo"></p>
+                    </div>
+
+                    <a class="boton boton-claro" href="productos.html">Ver productos</a>
+                </div>
+                <div class="hero-imagen">
+                    <img src="img/hero.svg" alt="Perchero con prendas de VYY'S">
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor">
+            <h2>Prendas destacadas</h2>
+            <hr class="linea-dorada">
+            <p class="subtitulo">Algunas de las prendas que más les gustan a nuestros clientes.</p>
+            <div class="tarjetas">
+            <div class="tarjeta">
+                <img src="img/vestidos.svg" alt="Vestidos">
+                <div class="tarjeta-info">
+                    <h3>Vestidos</h3>
+                    <p>Vestidos semielegantes para damas, con diseños variados y telas de buena calidad.</p>
+                    <a class="boton" href="productos.html">Ver más</a>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="img/sacos.svg" alt="Sacos">
+                <div class="tarjeta-info">
+                    <h3>Sacos</h3>
+                    <p>Sacos que elevan cualquier conjunto, ideales para el trabajo o una ocasión especial.</p>
+                    <a class="boton" href="productos.html">Ver más</a>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="img/jeans.svg" alt="Jeans">
+                <div class="tarjeta-info">
+                    <h3>Jeans</h3>
+                    <p>Mezclilla cómoda y duradera para combinar con lo que tengas en tu clóset.</p>
+                    <a class="boton" href="productos.html">Ver más</a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="fondo-rosa">
+            <div class="contenedor">
+                <h2>¿Por qué elegir VYY'S?</h2>
+                <hr class="linea-dorada">
+                <div class="ventajas">
+                    <div class="ventaja">
+                        <div class="icono">01</div>
+                        <h3>Servicio a domicilio</h3>
+                        <p>Haz tu pedido desde la página web y lo llevamos hasta tu casa.</p>
+                    </div>
+                    <div class="ventaja">
+                        <div class="icono">02</div>
+                        <h3>Compras al por mayor</h3>
+                        <p>Precios especiales para emprendedores y empresas que compran para reventa.</p>
+                    </div>
+                    <div class="ventaja">
+                        <div class="icono">03</div>
+                        <h3>Calidad y buen precio</h3>
+                        <p>Prendas cómodas y duraderas sin que tengas que gastar de más.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>VYY'S</h3>
+        <p>Moda · Estilo</p>
+        <p>Correo: <a href="mailto:ventas@vyys.cr">ventas@vyys.cr</a></p>
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <p class="copy">&copy; <span id="anio">2026</span> VYY'S. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
