@@ -8,11 +8,11 @@ Sitio web de **VYY'S**, tienda de ropa casual y semielegante de Costa Rica. Proy
 
 | Integrante | Rol en la empresa |
 |---|---|
-| Integrante 1 | Gerente General |
-| Integrante 2 | Asesor de ventas |
-| Integrante 3 | Encargado de bodega |
-| Integrante 4 | Encargado de redes y diseño |
-| Integrante 5 | Contador / Asistente administrativo |
+| Yohel Garita | Gerente General |
+| Yulissa Miranda | Asesor de ventas |
+| Manuelito Guevara| Encargado de bodega |
+| Valeska Guevara | Encargado de redes y diseño |
+| Valeska Guevara | Contador / Asistente administrativo |
 
 ## Descripción
 
