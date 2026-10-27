@@ -922,3 +922,21 @@ footer a:hover {
         padding: 6px 18px 24px;
     }
 }
+
+/* ---------- Catálogo: conteo y botón "Ver más" ---------- */
+.conteo {
+    text-align: center;
+    margin: -10px 0 24px;
+    font-size: 14px;
+    color: #666;
+}
+
+.ver-mas {
+    text-align: center;
+    margin-top: 36px;
+}
+
+.filtros button {
+    padding: 8px 18px;
+    font-size: 13px;
+}

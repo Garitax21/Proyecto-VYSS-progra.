@@ -1,3 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d5249"/><stop offset="1" stop-color="#1e3b35"/></linearGradient></defs><rect width="400" height="400" fill="url(#g)"/><ellipse cx="200" cy="362" rx="115" ry="9" fill="#000" opacity=".12"/><path d="M142 80 Q200 118 258 80 L336 130 L306 186 L276 166 L276 334 L124 334 L124 166 L94 186 L64 130 Z" fill="#d9b8a8" stroke="#1e3b35" stroke-width="3" stroke-linejoin="round"/>
-<path d="M142 80 Q200 118 258 80" fill="none" stroke="#1e3b35" stroke-width="7" stroke-linecap="round"/>
-<text x="200" y="238" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#1e3b35" opacity=".85">VYY'S</text></svg>

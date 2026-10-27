@@ -31,7 +31,7 @@ VYY'S vende ropa, calzado y complementos de forma física y virtual, con servici
 1. Validación del formulario de contacto (campos obligatorios, correo y teléfono).
 2. Saludo personalizado con el nombre del visitante (opción A).
 3. Calculadora de compra con descuento por cantidad e IVA (opciones B y C).
-4. Filtro de productos por categoría y contador del carrito.
+4. Catálogo de 51 productos con filtro por categoría, botón "Ver más" y contador del carrito.
 5. Menú desplegable para celulares.
 
 ## Estructura del proyecto
@@ -49,7 +49,7 @@ ProyectoWeb_VYYS/
 │   └── script.js
 ├── img/
 │   ├── logo.png
-│   └── imágenes de productos y del sistema
+│   └── fotos de productos (51), hero y capturas del sistema
 └── README.md
 ```
 

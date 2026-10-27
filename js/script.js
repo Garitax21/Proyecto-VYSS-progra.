@@ -65,29 +65,62 @@ if (btnSaludo && campoNombre && mensajeSaludo) {
 }
 
 // =========================================
-// Productos: filtros y botón Agregar
+// Productos: filtros, "Ver más" y botón Agregar
 // =========================================
 const botonesFiltro = document.querySelectorAll(".filtros button");
 const listaProductos = document.querySelectorAll(".producto");
+const btnVerMas = document.getElementById("btnVerMas");
+const infoConteo = document.getElementById("infoConteo");
 
-botonesFiltro.forEach(function (boton) {
-    boton.addEventListener("click", function () {
-        const filtro = boton.dataset.filtro;
+const PASO = 12;          // cuántos productos se muestran cada vez
+let filtroActual = "todos";
+let limite = PASO;
 
-        botonesFiltro.forEach(function (b) {
-            b.classList.remove("activo");
-        });
-        boton.classList.add("activo");
+function actualizarProductos() {
+    let coinciden = 0;
+    let mostrados = 0;
 
-        listaProductos.forEach(function (producto) {
-            if (filtro === "todos" || producto.dataset.categoria === filtro) {
+    listaProductos.forEach(function (producto) {
+        const cumple = filtroActual === "todos" || producto.dataset.categoria === filtroActual;
+        if (cumple) {
+            coinciden++;
+            if (mostrados < limite) {
                 producto.style.display = "flex";
+                mostrados++;
             } else {
                 producto.style.display = "none";
             }
+        } else {
+            producto.style.display = "none";
+        }
+    });
+
+    infoConteo.textContent = "Mostrando " + mostrados + " de " + coinciden + " productos";
+    btnVerMas.style.display = mostrados < coinciden ? "inline-block" : "none";
+}
+
+if (listaProductos.length > 0) {
+    botonesFiltro.forEach(function (boton) {
+        boton.addEventListener("click", function () {
+            filtroActual = boton.dataset.filtro;
+            limite = PASO;
+
+            botonesFiltro.forEach(function (b) {
+                b.classList.remove("activo");
+            });
+            boton.classList.add("activo");
+
+            actualizarProductos();
         });
     });
-});
+
+    btnVerMas.addEventListener("click", function () {
+        limite += PASO;
+        actualizarProductos();
+    });
+
+    actualizarProductos();
+}
 
 const contadorCarrito = document.getElementById("contadorCarrito");
 let carrito = 0;

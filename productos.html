@@ -41,104 +41,485 @@
 
             <div class="filtros">
                 <button type="button" class="activo" data-filtro="todos">Todo</button>
-                <button type="button" data-filtro="ropa">Ropa</button>
-                <button type="button" data-filtro="calzado">Calzado</button>
-                <button type="button" data-filtro="complementos">Complementos</button>
+                <button type="button" data-filtro="camisas">Camisas</button>
+                <button type="button" data-filtro="camisetas">Camisetas</button>
+                <button type="button" data-filtro="pantalones">Pantalones</button>
+                <button type="button" data-filtro="jeans">Jeans</button>
+                <button type="button" data-filtro="tenis">Tenis</button>
+                <button type="button" data-filtro="zapatillas">Zapatillas</button>
+                <button type="button" data-filtro="sacos">Sacos</button>
+                <button type="button" data-filtro="chaquetas">Chaquetas</button>
+                <button type="button" data-filtro="accesorios">Accesorios</button>
+                <button type="button" data-filtro="vestidos">Vestidos</button>
             </div>
 
             <p class="aviso-carrito">Artículos en tu carrito: <span id="contadorCarrito">0</span></p>
+            <p class="conteo" id="infoConteo"></p>
 
             <div class="productos" id="listaProductos">
-            <div class="producto" data-categoria="ropa">
-                <img src="img/camisas.svg" alt="Camisas casuales">
+            <div class="producto" data-categoria="camisas">
+                <img src="img/camisa-oxford-verde.jpg" alt="Camisa Oxford verde olivo" loading="lazy">
                 <div class="producto-info">
-                    <h3>Camisas casuales</h3>
-                    <p>Camisas para el uso diario y para diferentes ocasiones. Cómodas, frescas y fáciles de combinar.</p>
-                    <p class="precio">₡14 500</p>
-                    <button type="button" class="btn-agregar" data-nombre="Camisas casuales">Agregar</button>
+                    <h3>Camisa Oxford verde olivo</h3>
+                    <p>Camisa de algodón con cuello botonado y bolsillo. Un clásico para todos los días.</p>
+                    <p class="precio">₡15 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Camisa Oxford verde olivo">Agregar</button>
                 </div>
             </div>
-            <div class="producto" data-categoria="ropa">
-                <img src="img/camisetas.svg" alt="Camisetas">
+            <div class="producto" data-categoria="camisas">
+                <img src="img/camisa-mao-negra.jpg" alt="Camisa cuello mao negra" loading="lazy">
                 <div class="producto-info">
-                    <h3>Camisetas</h3>
-                    <p>Ropa cómoda y moderna para complementar distintos estilos, en varios colores.</p>
+                    <h3>Camisa cuello mao negra</h3>
+                    <p>Camisa negra de cuello mao y botonadura oculta, ideal para salir de noche.</p>
+                    <p class="precio">₡16 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Camisa cuello mao negra">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="camisas">
+                <img src="img/camisa-mao-gris.jpg" alt="Camisa cuello mao gris" loading="lazy">
+                <div class="producto-info">
+                    <h3>Camisa cuello mao gris</h3>
+                    <p>Camisa gris de corte entallado con ribetes blancos y botones oscuros.</p>
+                    <p class="precio">₡17 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Camisa cuello mao gris">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="camisas">
+                <img src="img/camisa-celeste.jpg" alt="Camisa celeste clásica" loading="lazy">
+                <div class="producto-info">
+                    <h3>Camisa celeste clásica</h3>
+                    <p>Camisa celeste de manga larga, fresca y fácil de combinar con cualquier pantalón.</p>
+                    <p class="precio">₡14 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Camisa celeste clásica">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="camisas">
+                <img src="img/camisa-blanca.jpg" alt="Camisa blanca de vestir" loading="lazy">
+                <div class="producto-info">
+                    <h3>Camisa blanca de vestir</h3>
+                    <p>Camisa blanca de cuello clásico, básica para el trabajo o eventos formales.</p>
+                    <p class="precio">₡15 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Camisa blanca de vestir">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="camisetas">
+                <img src="img/camiseta-negra.jpg" alt="Camiseta básica negra" loading="lazy">
+                <div class="producto-info">
+                    <h3>Camiseta básica negra</h3>
+                    <p>Camiseta negra de algodón con cuello redondo, no puede faltar en el clóset.</p>
                     <p class="precio">₡7 900</p>
-                    <button type="button" class="btn-agregar" data-nombre="Camisetas">Agregar</button>
+                    <button type="button" class="btn-agregar" data-nombre="Camiseta básica negra">Agregar</button>
                 </div>
             </div>
-            <div class="producto" data-categoria="ropa">
-                <img src="img/pantalones.svg" alt="Pantalones">
+            <div class="producto" data-categoria="camisetas">
+                <img src="img/camiseta-gris.jpg" alt="Camiseta gris grafito" loading="lazy">
                 <div class="producto-info">
-                    <h3>Pantalones</h3>
-                    <p>Pantalones de vestir y casuales, con diseños para jóvenes y adultos.</p>
-                    <p class="precio">₡18 900</p>
-                    <button type="button" class="btn-agregar" data-nombre="Pantalones">Agregar</button>
-                </div>
-            </div>
-            <div class="producto" data-categoria="ropa">
-                <img src="img/jeans.svg" alt="Jeans">
-                <div class="producto-info">
-                    <h3>Jeans</h3>
-                    <p>Pantalones de mezclilla resistentes que combinan con casi cualquier prenda.</p>
-                    <p class="precio">₡21 500</p>
-                    <button type="button" class="btn-agregar" data-nombre="Jeans">Agregar</button>
-                </div>
-            </div>
-            <div class="producto" data-categoria="calzado">
-                <img src="img/tenis.svg" alt="Tenis">
-                <div class="producto-info">
-                    <h3>Tenis</h3>
-                    <p>Calzado cómodo para el uso diario, ideal para caminar todo el día.</p>
-                    <p class="precio">₡32 000</p>
-                    <button type="button" class="btn-agregar" data-nombre="Tenis">Agregar</button>
-                </div>
-            </div>
-            <div class="producto" data-categoria="calzado">
-                <img src="img/zapatillas.svg" alt="Zapatillas">
-                <div class="producto-info">
-                    <h3>Zapatillas</h3>
-                    <p>Zapatillas para damas, para diferentes estilos y ocasiones.</p>
-                    <p class="precio">₡27 500</p>
-                    <button type="button" class="btn-agregar" data-nombre="Zapatillas">Agregar</button>
-                </div>
-            </div>
-            <div class="producto" data-categoria="ropa">
-                <img src="img/sacos.svg" alt="Sacos">
-                <div class="producto-info">
-                    <h3>Sacos</h3>
-                    <p>Prendas semielegantes para ocasiones especiales o ambientes laborales.</p>
-                    <p class="precio">₡39 900</p>
-                    <button type="button" class="btn-agregar" data-nombre="Sacos">Agregar</button>
-                </div>
-            </div>
-            <div class="producto" data-categoria="ropa">
-                <img src="img/chaquetas.svg" alt="Chaquetas">
-                <div class="producto-info">
-                    <h3>Chaquetas</h3>
-                    <p>Chaquetas para complementar tus conjuntos y protegerte del frío.</p>
-                    <p class="precio">₡35 000</p>
-                    <button type="button" class="btn-agregar" data-nombre="Chaquetas">Agregar</button>
-                </div>
-            </div>
-            <div class="producto" data-categoria="complementos">
-                <img src="img/accesorios.svg" alt="Accesorios">
-                <div class="producto-info">
-                    <h3>Accesorios</h3>
-                    <p>Gorras, cinturones y otros complementos para terminar tu outfit.</p>
+                    <h3>Camiseta gris grafito</h3>
+                    <p>Camiseta de tela suave y buen caído, en tono gris oscuro.</p>
                     <p class="precio">₡8 500</p>
-                    <button type="button" class="btn-agregar" data-nombre="Accesorios">Agregar</button>
+                    <button type="button" class="btn-agregar" data-nombre="Camiseta gris grafito">Agregar</button>
                 </div>
             </div>
-            <div class="producto" data-categoria="ropa">
-                <img src="img/vestidos.svg" alt="Vestidos">
+            <div class="producto" data-categoria="camisetas">
+                <img src="img/camiseta-rayas.jpg" alt="Camiseta verde a rayas" loading="lazy">
                 <div class="producto-info">
-                    <h3>Vestidos</h3>
-                    <p>Vestidos semielegantes con diversidad y calidad para damas.</p>
-                    <p class="precio">₡24 900</p>
-                    <button type="button" class="btn-agregar" data-nombre="Vestidos">Agregar</button>
+                    <h3>Camiseta verde a rayas</h3>
+                    <p>Camiseta de rayas anchas en tonos verdes, con un toque casual y moderno.</p>
+                    <p class="precio">₡10 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Camiseta verde a rayas">Agregar</button>
                 </div>
             </div>
+            <div class="producto" data-categoria="camisetas">
+                <img src="img/camiseta-crema.jpg" alt="Camiseta crema oversize" loading="lazy">
+                <div class="producto-info">
+                    <h3>Camiseta crema oversize</h3>
+                    <p>Camiseta de corte holgado en color crema, cómoda para el día a día.</p>
+                    <p class="precio">₡11 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Camiseta crema oversize">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="camisetas">
+                <img src="img/camiseta-azul-flor.jpg" alt="Camiseta azul marino con flor" loading="lazy">
+                <div class="producto-info">
+                    <h3>Camiseta azul marino con flor</h3>
+                    <p>Camiseta azul marino de corte holgado con un pequeño estampado de flor.</p>
+                    <p class="precio">₡11 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Camiseta azul marino con flor">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="pantalones">
+                <img src="img/pantalon-gris-pliegues.jpg" alt="Pantalón gris con pliegues" loading="lazy">
+                <div class="producto-info">
+                    <h3>Pantalón gris con pliegues</h3>
+                    <p>Pantalón de vestir gris con pliegues y dobladillo, para la oficina.</p>
+                    <p class="precio">₡19 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Pantalón gris con pliegues">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="pantalones">
+                <img src="img/pantalon-cafe.jpg" alt="Pantalón de vestir café" loading="lazy">
+                <div class="producto-info">
+                    <h3>Pantalón de vestir café</h3>
+                    <p>Pantalón recto de tono café oscuro, elegante y cómodo.</p>
+                    <p class="precio">₡21 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Pantalón de vestir café">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="pantalones">
+                <img src="img/pantalon-gris-casual.jpg" alt="Pantalón gris casual" loading="lazy">
+                <div class="producto-info">
+                    <h3>Pantalón gris casual</h3>
+                    <p>Pantalón gris de corte recto para combinar con camisas o camisetas.</p>
+                    <p class="precio">₡17 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Pantalón gris casual">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="pantalones">
+                <img src="img/pantalon-cuadros.jpg" alt="Pantalón de cuadros" loading="lazy">
+                <div class="producto-info">
+                    <h3>Pantalón de cuadros</h3>
+                    <p>Pantalón de tela con estampado de cuadros y pliegues delanteros.</p>
+                    <p class="precio">₡23 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Pantalón de cuadros">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="pantalones">
+                <img src="img/pantalon-beige.jpg" alt="Pantalón beige" loading="lazy">
+                <div class="producto-info">
+                    <h3>Pantalón beige</h3>
+                    <p>Pantalón beige de corte ajustado, perfecto para un look semielegante.</p>
+                    <p class="precio">₡20 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Pantalón beige">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="jeans">
+                <img src="img/jeans-azul.jpg" alt="Jeans azul slim" loading="lazy">
+                <div class="producto-info">
+                    <h3>Jeans azul slim</h3>
+                    <p>Jeans de mezclilla azul con lavado suave y corte ajustado.</p>
+                    <p class="precio">₡21 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Jeans azul slim">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="jeans">
+                <img src="img/jeans-celeste-anchos.jpg" alt="Jeans anchos celeste" loading="lazy">
+                <div class="producto-info">
+                    <h3>Jeans anchos celeste</h3>
+                    <p>Jeans de pierna ancha en lavado claro, muy de moda.</p>
+                    <p class="precio">₡24 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Jeans anchos celeste">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="jeans">
+                <img src="img/jeans-lavado-medio.jpg" alt="Jeans anchos lavado medio" loading="lazy">
+                <div class="producto-info">
+                    <h3>Jeans anchos lavado medio</h3>
+                    <p>Jeans holgados con lavado desgastado y bolsillos amplios.</p>
+                    <p class="precio">₡23 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Jeans anchos lavado medio">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="jeans">
+                <img src="img/jeans-rotos.jpg" alt="Jeans desgastados con rotos" loading="lazy">
+                <div class="producto-info">
+                    <h3>Jeans desgastados con rotos</h3>
+                    <p>Jeans de lavado muy claro con rotos en las rodillas.</p>
+                    <p class="precio">₡25 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Jeans desgastados con rotos">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="jeans">
+                <img src="img/jeans-pierna-recta.jpg" alt="Jeans de pierna recta" loading="lazy">
+                <div class="producto-info">
+                    <h3>Jeans de pierna recta</h3>
+                    <p>Jeans celestes de pierna recta y tiro alto, versátiles y cómodos.</p>
+                    <p class="precio">₡24 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Jeans de pierna recta">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="tenis">
+                <img src="img/tenis-negros.jpg" alt="Tenis casuales negros" loading="lazy">
+                <div class="producto-info">
+                    <h3>Tenis casuales negros</h3>
+                    <p>Tenis negros de suela clara, cómodos para caminar todo el día.</p>
+                    <p class="precio">₡29 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Tenis casuales negros">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="tenis">
+                <img src="img/tenis-cafe.jpg" alt="Tenis café suela blanca" loading="lazy">
+                <div class="producto-info">
+                    <h3>Tenis café suela blanca</h3>
+                    <p>Tenis café con detalles azul marino y suela blanca, de estilo urbano.</p>
+                    <p class="precio">₡27 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Tenis café suela blanca">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="tenis">
+                <img src="img/tenis-azul-cafe.jpg" alt="Tenis azul marino y café" loading="lazy">
+                <div class="producto-info">
+                    <h3>Tenis azul marino y café</h3>
+                    <p>Tenis de cuero azul marino con detalles en café y suela gruesa.</p>
+                    <p class="precio">₡34 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Tenis azul marino y café">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="tenis">
+                <img src="img/tenis-camel.jpg" alt="Tenis cuero camel" loading="lazy">
+                <div class="producto-info">
+                    <h3>Tenis cuero camel</h3>
+                    <p>Tenis de cuero color camel, un estilo limpio y elegante.</p>
+                    <p class="precio">₡38 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Tenis cuero camel">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="tenis">
+                <img src="img/tenis-azul-cuero.jpg" alt="Tenis cuero azul marino" loading="lazy">
+                <div class="producto-info">
+                    <h3>Tenis cuero azul marino</h3>
+                    <p>Tenis minimalistas de cuero azul marino con suela blanca.</p>
+                    <p class="precio">₡36 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Tenis cuero azul marino">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="zapatillas">
+                <img src="img/zapato-cordones.jpg" alt="Zapatos de cordones azul marino" loading="lazy">
+                <div class="producto-info">
+                    <h3>Zapatos de cordones azul marino</h3>
+                    <p>Zapatos de vestir de cuero con cordones azules, para ocasiones especiales.</p>
+                    <p class="precio">₡32 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Zapatos de cordones azul marino">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="zapatillas">
+                <img src="img/mocasin-hebilla.jpg" alt="Mocasín con hebilla" loading="lazy">
+                <div class="producto-info">
+                    <h3>Mocasín con hebilla</h3>
+                    <p>Mocasín negro de cuero con hebilla metálica al frente.</p>
+                    <p class="precio">₡33 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Mocasín con hebilla">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="zapatillas">
+                <img src="img/mocasin-clasico.jpg" alt="Mocasín clásico" loading="lazy">
+                <div class="producto-info">
+                    <h3>Mocasín clásico</h3>
+                    <p>Mocasín negro brillante de estilo clásico, cómodo y elegante.</p>
+                    <p class="precio">₡31 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Mocasín clásico">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="zapatillas">
+                <img src="img/zapato-doble-hebilla.jpg" alt="Zapato de doble hebilla" loading="lazy">
+                <div class="producto-info">
+                    <h3>Zapato de doble hebilla</h3>
+                    <p>Zapato negro con doble hebilla, un clásico del calzado formal.</p>
+                    <p class="precio">₡36 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Zapato de doble hebilla">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="zapatillas">
+                <img src="img/zapato-sin-cordones.jpg" alt="Zapato sin cordones" loading="lazy">
+                <div class="producto-info">
+                    <h3>Zapato sin cordones</h3>
+                    <p>Zapato negro de cuero sin cordones y costura en contraste.</p>
+                    <p class="precio">₡28 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Zapato sin cordones">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="sacos">
+                <img src="img/saco-negro.jpg" alt="Saco negro con chaleco" loading="lazy">
+                <div class="producto-info">
+                    <h3>Saco negro con chaleco</h3>
+                    <p>Saco negro con chaleco, ideal para ocasiones especiales o ambientes laborales.</p>
+                    <p class="precio">₡39 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Saco negro con chaleco">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="sacos">
+                <img src="img/saco-gris-claro.jpg" alt="Saco gris claro" loading="lazy">
+                <div class="producto-info">
+                    <h3>Saco gris claro</h3>
+                    <p>Saco gris de tela suave, corte moderno y dos botones.</p>
+                    <p class="precio">₡42 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Saco gris claro">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="sacos">
+                <img src="img/saco-azul-cuadros.jpg" alt="Saco azul de cuadros finos" loading="lazy">
+                <div class="producto-info">
+                    <h3>Saco azul de cuadros finos</h3>
+                    <p>Saco azul con textura de cuadros finos, muy elegante.</p>
+                    <p class="precio">₡45 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Saco azul de cuadros finos">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="sacos">
+                <img src="img/saco-lino-menta.jpg" alt="Saco de lino verde menta" loading="lazy">
+                <div class="producto-info">
+                    <h3>Saco de lino verde menta</h3>
+                    <p>Saco de lino verde menta con botones dorados, fresco y ligero.</p>
+                    <p class="precio">₡44 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Saco de lino verde menta">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="sacos">
+                <img src="img/saco-azul-cuadritos.jpg" alt="Saco azul de cuadritos" loading="lazy">
+                <div class="producto-info">
+                    <h3>Saco azul de cuadritos</h3>
+                    <p>Saco azul con diseño de cuadritos y detalle en la solapa.</p>
+                    <p class="precio">₡46 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Saco azul de cuadritos">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="sacos">
+                <img src="img/saco-gris-oscuro.jpg" alt="Saco gris oscuro" loading="lazy">
+                <div class="producto-info">
+                    <h3>Saco gris oscuro</h3>
+                    <p>Saco gris oscuro de tela elástica, cómodo para todo el día.</p>
+                    <p class="precio">₡41 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Saco gris oscuro">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="sacos">
+                <img src="img/saco-gris-espiga.jpg" alt="Saco gris espiga" loading="lazy">
+                <div class="producto-info">
+                    <h3>Saco gris espiga</h3>
+                    <p>Saco gris claro de tejido espiga, con bolsillos de solapa.</p>
+                    <p class="precio">₡43 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Saco gris espiga">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="sacos">
+                <img src="img/saco-cafe.jpg" alt="Saco café" loading="lazy">
+                <div class="producto-info">
+                    <h3>Saco café</h3>
+                    <p>Saco café liso de dos botones, combina con camisas claras.</p>
+                    <p class="precio">₡42 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Saco café">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="chaquetas">
+                <img src="img/chaqueta-camisera-gris.jpg" alt="Chaqueta camisera gris" loading="lazy">
+                <div class="producto-info">
+                    <h3>Chaqueta camisera gris</h3>
+                    <p>Chaqueta tipo camisa en tela gruesa gris, con bolsillos y botones.</p>
+                    <p class="precio">₡28 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Chaqueta camisera gris">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="chaquetas">
+                <img src="img/chaqueta-borrego.jpg" alt="Chaqueta beige con cuello de borrego" loading="lazy">
+                <div class="producto-info">
+                    <h3>Chaqueta beige con cuello de borrego</h3>
+                    <p>Chaqueta beige con cuello de borrego, abrigada y con estilo.</p>
+                    <p class="precio">₡44 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Chaqueta beige con cuello de borrego">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="chaquetas">
+                <img src="img/chaqueta-verde-oscuro.jpg" alt="Chaqueta verde oscuro con cierre" loading="lazy">
+                <div class="producto-info">
+                    <h3>Chaqueta verde oscuro con cierre</h3>
+                    <p>Chaqueta ligera verde oscuro con cuello y cierre frontal.</p>
+                    <p class="precio">₡39 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Chaqueta verde oscuro con cierre">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="chaquetas">
+                <img src="img/chaqueta-gamuza.jpg" alt="Chaqueta bomber café" loading="lazy">
+                <div class="producto-info">
+                    <h3>Chaqueta bomber café</h3>
+                    <p>Chaqueta bomber café de acabado gamuzado con cierre.</p>
+                    <p class="precio">₡41 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Chaqueta bomber café">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="chaquetas">
+                <img src="img/chaqueta-bomber-verde.jpg" alt="Chaqueta bomber verde oliva" loading="lazy">
+                <div class="producto-info">
+                    <h3>Chaqueta bomber verde oliva</h3>
+                    <p>Chaqueta bomber verde oliva con puños elásticos.</p>
+                    <p class="precio">₡38 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Chaqueta bomber verde oliva">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="accesorios">
+                <img src="img/reloj.jpg" alt="Reloj de cuero café" loading="lazy">
+                <div class="producto-info">
+                    <h3>Reloj de cuero café</h3>
+                    <p>Reloj de caja rectangular con correa de cuero café y números romanos.</p>
+                    <p class="precio">₡34 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Reloj de cuero café">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="accesorios">
+                <img src="img/sombrero-gris.jpg" alt="Sombrero gris" loading="lazy">
+                <div class="producto-info">
+                    <h3>Sombrero gris</h3>
+                    <p>Sombrero de fieltro gris con cinta negra y hebilla metálica.</p>
+                    <p class="precio">₡14 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Sombrero gris">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="accesorios">
+                <img src="img/sombrero-negro.jpg" alt="Sombrero fedora negro" loading="lazy">
+                <div class="producto-info">
+                    <h3>Sombrero fedora negro</h3>
+                    <p>Sombrero fedora negro de fieltro con cinta, siempre a la moda.</p>
+                    <p class="precio">₡16 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Sombrero fedora negro">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="vestidos">
+                <img src="img/vestido-blanco.jpg" alt="Vestido blanco largo" loading="lazy">
+                <div class="producto-info">
+                    <h3>Vestido blanco largo</h3>
+                    <p>Vestido blanco largo por capas, con espalda abierta y mangas cortas.</p>
+                    <p class="precio">₡29 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Vestido blanco largo">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="vestidos">
+                <img src="img/vestido-rojo-puntos.jpg" alt="Vestido rojo de puntos" loading="lazy">
+                <div class="producto-info">
+                    <h3>Vestido rojo de puntos</h3>
+                    <p>Vestido largo con estampado de puntos rojos, falda con volantes.</p>
+                    <p class="precio">₡32 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Vestido rojo de puntos">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="vestidos">
+                <img src="img/vestido-rayado.jpg" alt="Vestido rayado con volantes" loading="lazy">
+                <div class="producto-info">
+                    <h3>Vestido rayado con volantes</h3>
+                    <p>Vestido de rayas con volantes en las mangas y la falda.</p>
+                    <p class="precio">₡34 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Vestido rayado con volantes">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="vestidos">
+                <img src="img/vestido-amarillo.jpg" alt="Vestido amarillo de capas" loading="lazy">
+                <div class="producto-info">
+                    <h3>Vestido amarillo de capas</h3>
+                    <p>Vestido amarillo estampado con muchas capas, ligero y fresco.</p>
+                    <p class="precio">₡36 500</p>
+                    <button type="button" class="btn-agregar" data-nombre="Vestido amarillo de capas">Agregar</button>
+                </div>
+            </div>
+            <div class="producto" data-categoria="vestidos">
+                <img src="img/vestido-azul-puntos.jpg" alt="Vestido azul de puntos" loading="lazy">
+                <div class="producto-info">
+                    <h3>Vestido azul de puntos</h3>
+                    <p>Vestido de hombros descubiertos con estampado azul y falda por capas.</p>
+                    <p class="precio">₡33 900</p>
+                    <button type="button" class="btn-agregar" data-nombre="Vestido azul de puntos">Agregar</button>
+                </div>
+            </div>
+            </div>
+
+            <div class="ver-mas">
+                <button type="button" id="btnVerMas">Ver más productos</button>
             </div>
         </section>
 
@@ -152,16 +533,77 @@
                         <div class="campo">
                             <label for="calcProducto">Producto</label>
                             <select id="calcProducto">
-                            <option value="14500">Camisas casuales - ₡14 500</option>
-                            <option value="7900">Camisetas - ₡7 900</option>
-                            <option value="18900">Pantalones - ₡18 900</option>
-                            <option value="21500">Jeans - ₡21 500</option>
-                            <option value="32000">Tenis - ₡32 000</option>
-                            <option value="27500">Zapatillas - ₡27 500</option>
-                            <option value="39900">Sacos - ₡39 900</option>
-                            <option value="35000">Chaquetas - ₡35 000</option>
-                            <option value="8500">Accesorios - ₡8 500</option>
-                            <option value="24900">Vestidos - ₡24 900</option>
+                            <optgroup label="Camisas">
+                                <option value="15900">Camisa Oxford verde olivo - ₡15 900</option>
+                                <option value="16500">Camisa cuello mao negra - ₡16 500</option>
+                                <option value="17500">Camisa cuello mao gris - ₡17 500</option>
+                                <option value="14900">Camisa celeste clásica - ₡14 900</option>
+                                <option value="15500">Camisa blanca de vestir - ₡15 500</option>
+                            </optgroup>
+                            <optgroup label="Camisetas">
+                                <option value="7900">Camiseta básica negra - ₡7 900</option>
+                                <option value="8500">Camiseta gris grafito - ₡8 500</option>
+                                <option value="10900">Camiseta verde a rayas - ₡10 900</option>
+                                <option value="11500">Camiseta crema oversize - ₡11 500</option>
+                                <option value="11500">Camiseta azul marino con flor - ₡11 500</option>
+                            </optgroup>
+                            <optgroup label="Pantalones">
+                                <option value="19500">Pantalón gris con pliegues - ₡19 500</option>
+                                <option value="21900">Pantalón de vestir café - ₡21 900</option>
+                                <option value="17900">Pantalón gris casual - ₡17 900</option>
+                                <option value="23500">Pantalón de cuadros - ₡23 500</option>
+                                <option value="20500">Pantalón beige - ₡20 500</option>
+                            </optgroup>
+                            <optgroup label="Jeans">
+                                <option value="21500">Jeans azul slim - ₡21 500</option>
+                                <option value="24900">Jeans anchos celeste - ₡24 900</option>
+                                <option value="23900">Jeans anchos lavado medio - ₡23 900</option>
+                                <option value="25900">Jeans desgastados con rotos - ₡25 900</option>
+                                <option value="24500">Jeans de pierna recta - ₡24 500</option>
+                            </optgroup>
+                            <optgroup label="Tenis">
+                                <option value="29900">Tenis casuales negros - ₡29 900</option>
+                                <option value="27900">Tenis café suela blanca - ₡27 900</option>
+                                <option value="34900">Tenis azul marino y café - ₡34 900</option>
+                                <option value="38500">Tenis cuero camel - ₡38 500</option>
+                                <option value="36900">Tenis cuero azul marino - ₡36 900</option>
+                            </optgroup>
+                            <optgroup label="Zapatillas">
+                                <option value="32900">Zapatos de cordones azul marino - ₡32 900</option>
+                                <option value="33500">Mocasín con hebilla - ₡33 500</option>
+                                <option value="31900">Mocasín clásico - ₡31 900</option>
+                                <option value="36500">Zapato de doble hebilla - ₡36 500</option>
+                                <option value="28900">Zapato sin cordones - ₡28 900</option>
+                            </optgroup>
+                            <optgroup label="Sacos">
+                                <option value="39900">Saco negro con chaleco - ₡39 900</option>
+                                <option value="42500">Saco gris claro - ₡42 500</option>
+                                <option value="45900">Saco azul de cuadros finos - ₡45 900</option>
+                                <option value="44500">Saco de lino verde menta - ₡44 500</option>
+                                <option value="46500">Saco azul de cuadritos - ₡46 500</option>
+                                <option value="41900">Saco gris oscuro - ₡41 900</option>
+                                <option value="43900">Saco gris espiga - ₡43 900</option>
+                                <option value="42900">Saco café - ₡42 900</option>
+                            </optgroup>
+                            <optgroup label="Chaquetas">
+                                <option value="28900">Chaqueta camisera gris - ₡28 900</option>
+                                <option value="44900">Chaqueta beige con cuello de borrego - ₡44 900</option>
+                                <option value="39900">Chaqueta verde oscuro con cierre - ₡39 900</option>
+                                <option value="41900">Chaqueta bomber café - ₡41 900</option>
+                                <option value="38900">Chaqueta bomber verde oliva - ₡38 900</option>
+                            </optgroup>
+                            <optgroup label="Accesorios">
+                                <option value="34900">Reloj de cuero café - ₡34 900</option>
+                                <option value="14900">Sombrero gris - ₡14 900</option>
+                                <option value="16500">Sombrero fedora negro - ₡16 500</option>
+                            </optgroup>
+                            <optgroup label="Vestidos">
+                                <option value="29900">Vestido blanco largo - ₡29 900</option>
+                                <option value="32500">Vestido rojo de puntos - ₡32 500</option>
+                                <option value="34900">Vestido rayado con volantes - ₡34 900</option>
+                                <option value="36500">Vestido amarillo de capas - ₡36 500</option>
+                                <option value="33900">Vestido azul de puntos - ₡33 900</option>
+                            </optgroup>
                             </select>
                         </div>
                         <div class="campo">
